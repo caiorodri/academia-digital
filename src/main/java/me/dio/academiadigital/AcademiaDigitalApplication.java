@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 public class AcademiaDigitalApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AcademiaDigitalAppliit cation.class, args);
+		SpringApplication.run(AcademiaDigitalApplication.class, args);
 	}
 
 }
