@@ -1,6 +1,7 @@
 package me.dio.academiadigital.service;
 
 import me.dio.academiadigital.entity.Aluno;
+import me.dio.academiadigital.entity.AvaliacaoFisica;
 import me.dio.academiadigital.entity.form.AlunoForm;
 import me.dio.academiadigital.entity.form.AlunoUpdateForm;
 
@@ -19,7 +20,7 @@ public interface IAlunoService {
    * @param id - id do Aluno que será exibido.
    * @return - Aluno de acordo com o Id fornecido.
    */
-  Aluno get(Long id);
+  Aluno getById(Long id);
 
   /**
    * Retorna todos os Alunos que estão no banco de dados.
@@ -41,4 +42,6 @@ public interface IAlunoService {
    * @param id - id do Aluno que será removido.
    */
   void delete(Long id);
+
+  List<AvaliacaoFisica> getAllAvaliacoesFisica(Long id);
 }
