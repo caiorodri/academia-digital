@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class AvaliacaoFisicaImpl implements IAvaliacaoFisicaService {
+public class AvaliacaoFisicaServiceImpl implements IAvaliacaoFisicaService {
 
     @Autowired
     private AvaliacaoFisicaRepository avaliacaoFisicaRepository;
@@ -37,7 +37,7 @@ public class AvaliacaoFisicaImpl implements IAvaliacaoFisicaService {
     }
 
     @Override
-    public AvaliacaoFisica get(Long id) {
+    public AvaliacaoFisica getById(Long id) {
 
         return avaliacaoFisicaRepository.findById(id).get();
 
